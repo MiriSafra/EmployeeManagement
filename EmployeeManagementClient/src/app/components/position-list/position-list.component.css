@@ -1,0 +1,49 @@
+.form-container {
+    margin: 0 auto; /* מרכז את הטופס באמצע העמוד */
+    width: 20%; /* רוחב הטופס */
+    max-width: 50%; /* מגביל את הרוחב המקסימלי של הטופס */
+    padding: 20px; /* הוספת שולים רכים מסביב לטופס */
+    background-color: #ffffff; /* רקע לבן */
+    border-radius: 10px; /* סיבוב שולי הטופס */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* הוספת צל לטופס */
+  }
+
+   .in{
+    width: 5px;
+    color: azure;
+   }
+/* .container {
+    width: 80%;  או גודל אחר שתרצה 
+    margin: auto; יצר מרווח בין התוכן לשולי הדף 
+  }*/
+.container {
+  max-width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 992px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    margin: auto;
+  }
+}

@@ -1,0 +1,36 @@
+.mat-dialog-container {
+    height: 100%;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  
+        max-width: 90%;
+        max-height: 90%;
+
+  }
+  .mat-dialog-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  .mat-dialog-content {
+    padding: 10px;
+  }
+  
+  .mat-form-field {
+    margin-bottom: 1px;
+  }
+  
+  .mat-input-element {
+    width: 100%;
+  }
+  .mat-dialog-actions {
+    padding: 10px;
+    text-align: right;
+  }
+  
+  .mat-raised-button {
+    margin-left: 10px;
+  }
+      

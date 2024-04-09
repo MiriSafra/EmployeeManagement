@@ -1,0 +1,25 @@
+.home-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* גובה של כל המסך */
+    overflow: hidden;
+  }
+  
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* נשמר על יחסי תמונה */
+  }
+  
+  .centered-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(6, 6, 6); /* צבע הכיתוב */
+  }
+  
