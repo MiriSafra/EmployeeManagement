@@ -1,8 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, shareReplay, tap } from 'rxjs';
-import { PositionEmployee } from '../model/PositionEmployee.model';
-import { Position } from '../model/position.model';
+import { PositionEmployee } from '../models/PositionEmployee.model';
+import { Position } from '../models/position.model';
 
 @Injectable({
   providedIn: 'root'

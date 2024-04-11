@@ -24,18 +24,6 @@ namespace EmployeesManagementServer.Data.Repositories
             return position;
         }
 
-        //public async Task<bool> DeletePositionAsync(int id)
-        //{
-        //    var position = await _context.Positions.FirstOrDefaultAsync(p => p.PositionId == id);
-
-        //    if (position != null)
-        //    {
-        //        position.StatusDelete = false;
-        //        await _context.SaveChangesAsync();
-        //        return true; 
-        //    }
-        //    return false; 
-        //}
 
         public async Task<IEnumerable<Position>> GetPositionsAsync()
         {

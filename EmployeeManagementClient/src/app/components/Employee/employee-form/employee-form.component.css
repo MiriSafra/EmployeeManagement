@@ -1,0 +1,27 @@
+form {
+  margin-top: 5%;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  margin-left: 25%
+ 
+}
+
+.mui-text-field {
+  margin-bottom: 15px;
+}
+
+.mui-select {
+  width: 100%;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+button {
+  width: 100%;
+}

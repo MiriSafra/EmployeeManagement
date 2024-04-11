@@ -1,0 +1,25 @@
+<form *ngIf="addPosition" #positionForm="ngForm" (ngSubmit)="onSubmit()" class="form">
+    <div class="form-group">
+      <label for="positionName">Position Name:</label>
+      <input type="text" class="form-control" id="positionName" name="positionName" [(ngModel)]="position.positionName" required>
+    </div>
+    <div class="form-group">
+      <!-- Add other form inputs here if needed -->
+    </div>
+    <button label="Cancel" class="btn btn-primary" (click)="onCancel()">Cancel</button>
+    <button type="submit" class="btn btn-primary" [disabled]="!positionForm.valid">Submit</button>
+    <!-- Disable the button if the form is not valid -->
+  </form>
+  
+
+<div  class="container">
+    <mat-card>
+        <button  *ngIf="!addPosition" type="submit" class="btn btn-primary" margin-top="5%" (click)="AddPosition()">Add Position</button>
+</mat-card>
+
+    <div class="item-list" *ngFor="let item of items">
+        <mat-card-content class="item">
+            {{ item }}
+        </mat-card-content>
+    </div>
+</div>

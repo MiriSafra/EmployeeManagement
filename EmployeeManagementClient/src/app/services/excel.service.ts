@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { EmployeeTableComponent } from '../Employees/employee-table/employee-table.component';
+import { EmployeeTableComponent } from '../components/Employee/employee-table/employee-table.component';
 import { Router } from '@angular/router';
 import { EmployeeService } from './employee-service.service';
 import { PositionService } from './position.service';

@@ -33,4 +33,3 @@ namespace EmployeesManagementServer.Data
 
     }
 }
-/*            optionsBuilder.UseSqlServer(@"Data Source=.\SQLEXPRESS;Initial Catalog=Employee ;Integrated Security=true; User ID=Miri; TrustServerCertificate=True;*//* Encrypt=False;");*/

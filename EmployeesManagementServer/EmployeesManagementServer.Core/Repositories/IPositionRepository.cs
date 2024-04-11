@@ -11,6 +11,5 @@ namespace EmployeesManagementServer.Core.Repositories
     {
         Task<IEnumerable<Position>> GetPositionsAsync();
         Task<Position> AddEmployeeAsync(Position position);
-        //Task<bool> DeletePositionAsync(int id);
     }
 }

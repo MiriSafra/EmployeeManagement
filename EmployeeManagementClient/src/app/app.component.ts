@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { NavbarComponent } from "./navbar/navbar.component";
+import { NavbarComponent } from "./components/Display/navbar/navbar.component";
+//import { EmployeeTableComponent } from "..../../../Employee/employee-table/employee-table.component";
 
 
 @Component({
