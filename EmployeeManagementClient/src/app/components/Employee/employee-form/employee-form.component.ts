@@ -72,17 +72,17 @@ export class EmployeeFormComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    const key = "connect"; // שם המפתח של האיבר
-    const value = sessionStorage.getItem(key);
+    // const key = "connect"; // שם המפתח של האיבר
+    // const value = sessionStorage.getItem(key);
 
-    if (value === null) {
-      Swal.fire({
-        icon:'error',
-        text: 'you have to sign in',
-        timer: 2000
-      })
-      this.router.navigate(["/login"]);
-    }
+    // if (value === null) {
+    //   Swal.fire({
+    //     icon:'error',
+    //     text: 'you have to sign in',
+    //     timer: 2000
+    //   })
+    //   this.router.navigate(["/login"]);
+    // }
     this.id = Number(this.route.snapshot.paramMap.get('id'));
 
     this._EmployeeService.getEmployeeById(this.id).subscribe(emp => {

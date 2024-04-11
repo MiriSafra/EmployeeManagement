@@ -14,7 +14,7 @@ export const routes: Routes = [
     { path: "employees", component: EmployeeTableComponent},
     { path: "edit/:id/:entryDate", component: EditEmployeeComponent},
     { path: "form/:id", component:EmployeeFormComponent },
-    { path: "table", component: EmployeeTableComponent},
+   // { path: "table", component: EmployeeTableComponent},
     { path: "add", component: AddEmployeeComponent},
     { path: "positions/:id", component: PositionListComponent},
     { path: "positionsList", component: PositionsComponent},

@@ -86,17 +86,17 @@ export class EmployeeTableComponent implements OnInit {
 
   ) { }
   async ngOnInit(bool: boolean = false): Promise<void> {
-    const key = "connect"; // שם המפתח של האיבר
-    const value = sessionStorage.getItem(key);
+    // const key = "connect"; // שם המפתח של האיבר
+    // const value = sessionStorage.getItem(key);
 
-    if (value === null) {
-      Swal.fire({
-        icon: 'error',
-        text: 'you have to sign in',
-        timer: 2000
-      })
-      this._router.navigate(["/login"]);
-    }
+    // if (value === null) {
+    //   Swal.fire({
+    //     icon: 'error',
+    //     text: 'you have to sign in',
+    //     timer: 2000
+    //   })
+    //   this._router.navigate(["/login"]);
+    // }
     console.log("URL", this._router.url)
     this.filterForm = new FormGroup({
       searchText: new FormControl(''),
