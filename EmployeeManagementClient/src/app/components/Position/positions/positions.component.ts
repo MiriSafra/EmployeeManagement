@@ -9,7 +9,8 @@ import { CommonModule } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import Swal from 'sweetalert2';
-import { Router } from 'express';
+import { Router } from '@angular/router';
+
 @Component({
  // providers: [ButtonModule],
   selector: 'app-positions',

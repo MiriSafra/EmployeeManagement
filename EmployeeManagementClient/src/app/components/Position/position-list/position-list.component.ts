@@ -11,7 +11,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { FormBuilder, FormGroup, FormsModule } from '@angular/forms';
-import {  MatDialogModule} from '@angular/material/dialog';
+import { MatDialogModule } from '@angular/material/dialog';
 import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
 import { MatCardContent } from '@angular/material/card';
 import { MatFormField } from '@angular/material/form-field';
@@ -19,7 +19,7 @@ import { MatSelect } from '@angular/material/select';
 import { MatInput } from '@angular/material/input';
 import { MatSlideToggle } from '@angular/material/slide-toggle';
 import { ButtonModule } from 'primeng/button';
-import {NgbDatepickerModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbDatepickerModule } from '@ng-bootstrap/ng-bootstrap';
 import { Employee } from '../../../models/employee.model';
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -28,7 +28,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatInputModule } from '@angular/material/input';
 import { provideNativeDateAdapter } from '@angular/material/core';
 import { MatDatepickerModule } from '@angular/material/datepicker';
-
+import { ReactiveFormsModule } from '@angular/forms';
 @Component({
   providers: [provideNativeDateAdapter()],
   selector: 'app-position-list',
@@ -42,7 +42,7 @@ export class PositionListComponent implements OnInit {
 
 
   positionForm!: FormGroup;
-  positionId: Number = 0;
+  positionId: number = 0;
   entryDate: Date = new Date();
   isManagement: boolean = false;
   position: Position;
@@ -192,7 +192,13 @@ export class PositionListComponent implements OnInit {
   }
   onSubmit(): void {
     this.addPosition = false;
+    // this.positionEmployee.positionId=this.position.positionId;
     console.log("hjin", this.positionEmployee)
+    console.log("isManagement", this.positionEmployee.isManagement)
+    console.log("entryDate", this.positionEmployee.entryDate)
+    console.log("positionId", this.positionEmployee.positionId)
+    console.log("positionName", this.positionEmployee.positionName)
+
     try {
       this.service.addPositionForEmployee(this.id, this.positionEmployee).subscribe({
         next: async () => {
@@ -216,5 +222,12 @@ export class PositionListComponent implements OnInit {
       }
       exist = false;
     }
+
+  }
+  onPositionSelectionChange(event: any) {
+    console.log("event", event)
+    // עדכון הערך שנבחר ב-Select למשתנה בעמוד ה-TS
+    this.positionEmployee = event.value;
+    // כאן תוכל לבצע פעולות נוספות לאחר בחירת הערך, אם יש צורך
   }
 }

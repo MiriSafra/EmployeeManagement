@@ -1,6 +1,6 @@
 export class PositionEmployee{
     
-    positionId: number;
+    positionId: Number;
     positionName : string;
     entryDate:Date;
     isManagement:boolean;

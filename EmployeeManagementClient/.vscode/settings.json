@@ -1,0 +1,7 @@
+{
+    "win-ca.inject": "append",
+    "intellicode-completions-cdk.runAlongsideCopilot": true,
+    "github.copilot.advanced": {
+        
+    }
+}
